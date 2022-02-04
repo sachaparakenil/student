@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <center>
+    <title>Student Placement Predictor</title>
+</head>
+<body style=" background: linear-gradient(to right, #500dd6, #62661a); ">
+
+    <h1>Student Placement Predictor</h1>
+    {% if result %}
+        <p style="font-size: 25px;"><b>{{ result }}</b></p>
+    {% endif %}
+    <form method="post" action="/predict">
+        <label>CGPA</label><br>
+        <input type="text" name="cgpa"><br><br>
+
+        <label>IQ</label><br>
+        <input type="text" name="iq"><br><br>
+
+        <label>Profile Score</label><br>
+        <input type="text" name="profile_score"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+    
+
+     <div class="box">
+        <center>
+ <h2>By Using <b style="color: rgb(224, 157, 10);">Support Vector Machine</b> and <b style="color: rgb(161, 214, 250);">Microsoft Azure</b></h2>
+<br>
+<h3>Made By Kenil Sachapara | <a href="https://www.github.com/meet78/" target="_blank">Github</a></h3>
+ 
+</center>
+
+
+    </div>
+
+</body>
+</html>
